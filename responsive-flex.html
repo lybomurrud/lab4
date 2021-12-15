@@ -12,6 +12,7 @@ nav{
   background-color:#5C5B5B;
   height:75px;
   font-family: arial;
+  width:100%;
 } /*задав параметри для елементу <nav>*/
   .nav_bar{
       display: flex;
@@ -21,30 +22,43 @@ nav{
   }
 header{
   background-color:#888888;
-  height:400px;
+  height:15%;
   text-align: center;
   font-family: arial;
+  width:100%;
 } /*задав параметри для елементу <header>*/
 section{
-  background-color: gray;
-  height:500px;
-  margin-top:75px;
-  margin-bottom:75px;
-  margin-left:100px;
-  margin-right:100px;
-  font-family: arial;
+  background-color: grey;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 75px;
+  font-size: 0;
 } /*задав параметри для елементу <section>*/
 #flex-container{ /*Створення flex container для боксів з картинками*/
   display:flex;
   justify-content: space-between;;
 }
 .box1{
-  height:220px;
-  width: 20%;
+  display: inline-flex;
+ height: 200px;
+ width: 48%;
+ background-color: tomato;
+ margin-right: 0px;
+ margin-bottom: 0px;
+ border: none;
+ padding: 0px;
 } /*задав параметри для 1-го помаранчевого боксу*/
 .box2{
-  height:220px;
-  width: 20%;
+  display: inline-flex;
+  height: 200px;
+  width: 48%;
+  background-color: tomato;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  border: none;
+  padding: 0px;
+  margin-left: 48px;
 } /*задав параметри для 2-го помаранчевого боксу*/
 a{
   color: #ffffff;
@@ -52,10 +66,11 @@ a{
   text-decoration: none;
 } /*задав параметри для селектора а*/
 .prefooter{
-  height:40px;
+  height:5%;
   background-color: silver;
   font-family: arial;
   text-align: center;
+  width:100%;
 } /*задав параметри для елементу <prefooter>*/
   .div1{
     font-size: 100%;
@@ -70,34 +85,12 @@ footer{
   color: gray;
 } /*задав параметри для елементу <footer>*/
 .yellow{
-  height:200px;
-  background-color:#E5E5E5;
-  margin-bottom:75px;
-  text-align: center;
-}
-@media (max-width: 1400px) {
-  .yellow{
-    font-family: constantia;
-    font-size: 75%;
-  }
-}
-@media (max-width: 1000px) {
-  .yellow{
-    font-family: constantia;
-    font-size: 65%;
-  }
-}
-@media (max-width: 700px) {
-  .yellow{
-    font-family: constantia;
-    font-size: 50%;
-  }
-}
-@media (max-width: 500px) {
-  .yellow{
-    font-family: constantia;
-    font-size: 40%;
-  }
+  background-color: silver;
+  height: 20%;
+  margin-bottom: 75px;
+  margin-top:50px;
+  font-size: 25px;
+  font-size: 1.7vw;
 }
     </style>
   </head>
@@ -110,7 +103,8 @@ footer{
 </div>
   </header>
   <section>
-    <p class="yellow"><b>Брендинг</b><br/>
+    <p class="yellow">
+    <b>Брендинг</b><br/>
     Огромную роль в эволюции кроссовок сыграл брендинг: из трех белых полосок и простой галочки рождались знаковые дизайны, сделавшие <b>Adidas</b> и <b>Nike</b> передовыми марками спортивной обуви.
     Свою роль сыграла их увлеченность инновациями, которая помогла им добиться столь серьезных высот и закрепиться на них.
     Чтобы привлечь большую аудиторию, фирмы стали сотрудничать со знаменитостями и дизайнерами, создавая коллекции под их именем и обеспечивая тем самым спрос среди многочисленных поклонников и коллекционеров.
